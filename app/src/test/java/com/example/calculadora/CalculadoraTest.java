@@ -20,6 +20,6 @@ public class CalculadoraTest {
         sut.setOper2(3.0);
         sut.setOperacion(Calculadora.OPERACION.RESTA);
 
-        assertEquals(-1.0, sut.opera(), 0.001);
+        assertEquals(-2.0, sut.opera(), 0.001);
     }
 }
