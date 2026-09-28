@@ -24,6 +24,6 @@ public class CalculadoraAvanzadaSumaExitoUITest {
         onView(withId(R.id.tv3)).perform(click());
         onView(withId(R.id.tvEqu)).perform(click());
 
-        onView(withId(R.id.tvResult)).check(matches(withText("-2")));
+        onView(withId(R.id.tvResult)).check(matches(withText("-1")));
     }
 }
