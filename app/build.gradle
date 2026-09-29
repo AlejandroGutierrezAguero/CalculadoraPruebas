@@ -15,8 +15,9 @@ tasks.withType(Test) {
     jacoco.excludes = ['jdk.internal.*'] // needed to support roboelectric with jacoco
 }
 
-tasks.register('jacocoTestReport', JacocoReport) {
-    dependsOn 'testDebugUnitTest'
+// tasks.register('jacocoTestReport', JacocoReport) {
+//    dependsOn 'testDebugUnitTest'
+task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'connectedDebugAndroidTest']) {
 
     reports {
         xml.required = true
